@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <main id="container">
+        <div class="calculadora">
+            <header class="titulo">
+                <h1>Calculadora-IMC</h1>
+            </header>
+            <form id="form">
+                <label for="peso">Peso</label>
+                <div class="inputs">
+                    <i class="fa-solid fa-weight-hanging"></i>
+                    <input type="text" id="peso" placeholder="60,5" maxlength="5" required >
+                    <span>kg</span>
+                </div>
+                <label for="altura">Altura</label>
+                <div class="inputs">
+                    <i class="fa-solid fa-ruler"></i>
+                    <input type="text" id="altura" placeholder="170" maxlength="4" required>
+                    <span>cm</span>
+                </div>
+                <button class="btnCalcular">Calcular</button>
+                <button class="btnLimpar">Limpar</button>
+            </form>
+            <div class="infos disable">
+                <div class="text-imc">
+                    <p class="imcNumber"></p>
+                    <p class="seu-imc"></p>
+                </div>
+
+                <div class="result-imc">
+                    <p class="estado"></p>
+                </div>
+            </div>
+
+            <div class="mais">
+                <a href="https://www.tuasaude.com/calculadora/imc/" target="_blank">Saiba Mais <span><i class="fa-solid fa-arrow-up-right-from-square"></i></span></a>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+    <script src="js/script.js"></script>
+
+    <script src="https://kit.fontawesome.com/21e8a28ea3.js" crossorigin="anonymous"></script>
+</body>
+</html>

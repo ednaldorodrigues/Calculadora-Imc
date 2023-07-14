@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url("/img/saude.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #0e2f61;
+}
+
+.calculadora {
+    background: rgba(10, 16, 19, 0.9);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    border-radius: 4px;
+}
+
+label {
+    display: block;
+    font-size: 1.5rem;
+    color: #0e2f61;
+    font-weight: bold;
+}
+
+.inputs {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   background: #fff;
+   border-radius: 4px;
+   margin-bottom: 20px;
+}
+
+.inputs input {
+    padding: 15px;
+    border: none;
+    width: 100%;
+    border-radius: 4px;
+    outline: none;
+    font-size: 1.2rem;
+}
+
+.inputs i {
+    font-size: 1.3rem;
+    margin-left: 5px;
+    color: #0e2f61;
+}
+
+.inputs span {
+    font-size: 1.3rem;
+    color: #0e2f61;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.btnCalcular {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    color: #FFF;
+    font-weight: bold;
+    background: #0e2f61;
+    cursor: pointer;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.btnCalcular:hover {
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px #0e2f61;
+}
+
+.btnLimpar {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    color: #FFF;
+    font-weight: bold;
+    background: #0e2f61;
+    cursor: pointer;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.btnLimpar:hover {
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px #0e2f61;
+}
+
+.infos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+    padding: 5px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.infos.disable {
+    display: none;
+}
+
+.imcNumber {
+    font-size: 2rem;
+}
+
+.imcNumber.cuidado {
+    color: #b80a0a;
+}
+
+.imcNumber.normal {
+    color: #38d818;
+}
+
+.seu-imc {
+    color: #fff;
+}
+
+.estado {
+    font-size: 1rem;
+    color: #fff;
+}
+
+.mais a {
+    text-decoration: none;
+    color: #fff;
+    background: #0e2f61;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.mais span {
+    margin-left: 5px;
+}
+
+.mais a:hover {
+    background: #fff;
+    color: #0e2f61;
+}
+
+@media (max-width: 500px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: url("/img/saude-mobile.jpg");
+    }
+
+    .titulo {
+        font-size: 1.3rem;
+    }
+
+    .calculadora {
+        padding: 10px;
+        max-width: 300px;
+    }
+
+    #container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    height: 100vh;
+    margin-top: 50px;
+}
+
+}
