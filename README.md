@@ -18,7 +18,7 @@ CSS: Linguagem de estilo para definir a aparência e o layout da calculadora.
 JavaScript: Linguagem de programação para manipular os dados e executar os cálculos necessários.
 
 ## Como usar
-Acesse o link para testar a calculadora de IMC.
+Acesse https://busca-cep-js-2g44.vercel.app/ para testar a calculadora de IMC.
 
 Insira seu peso (em quilogramas) e altura (em metros ou centímetros) nos campos apropriados.
 
